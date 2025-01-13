@@ -37,7 +37,7 @@ def main():
     while True:
         print("\nTo-Do List App")
         print("1. Add Task")
-        print("2. View Tasks")
+        print("2. View eguigeuj Tasks")
         print("3. Mark Task as Completed")
         print("4. Delete Task")
         print("5. Exit")
