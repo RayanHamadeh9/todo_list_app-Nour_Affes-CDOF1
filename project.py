@@ -44,11 +44,12 @@ class TodoList:
             if confirmation == "yes":
                 self.tasks.pop(task_number - 1)
                 print(f"Task deleted: {task_to_delete['task']}")
-            else:
+            elif confirmation == "no":
                 print("Task deletion canceled.")
+            else:
+                print("Invalid input. Please type 'yes' or 'no'.")
         else:
             print("Invalid task number.")
-
 
 def main():
     """
