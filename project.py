@@ -58,7 +58,7 @@ def main():
         print("\nTo-Do List App")
         print("1. Add Task")
         print("2. View Tasks")
-        print("3. Mark gregurg Task as Completed")
+        print("3. Mark Task as Completed") # fixed a typi here !!
         print("4. Delete Task")
         print("5. Exit")
 
