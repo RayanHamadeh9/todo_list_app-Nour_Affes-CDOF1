@@ -39,8 +39,13 @@ class TodoList:
         # Deletes a task from the to-do list.
         # Args: task_number (int): the number of the task to be deleted.
         if 0 < task_number <= len(self.tasks):
-            removed_task = self.tasks.pop(task_number - 1)
-            print(f"Task deleted: {removed_task['task']}")
+            task_to_delete = self.tasks[task_number - 1]
+            confirmation = input (f"Are you sure you want to delete the task: '{task_to_delete['task']}'? (yes/no): ").strip().lower()
+            if confirmation == "yes":
+                self.tasks.pop(task_number - 1)
+                print(f"Task deleted: {task_to_delete['task']}")
+            else:
+                print("Task deletion canceled.")
         else:
             print("Invalid task number.")
 
